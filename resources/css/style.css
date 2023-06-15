@@ -1,0 +1,569 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. 85px*/
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+/*********************************/
+/*********************************/
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+} 
+/*********************************/
+/************* Header ************/
+/*********************************/
+
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+  z-index: 10;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1.5rem; /*24px*/
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+/******************************************/
+/******************************************/
+@media only screen and (max-width: 600px) {
+  
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    height: 3rem;
+    padding: 0.5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+/******************************************/
+/************* Sign Up Section ************/
+/******************************************/
+
+#sign-up-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: url("../images/banner-landingpage.jpg");
+  background-size: cover;
+  height: 43.5rem; /*696px*/
+}
+
+#sign-up-cta {
+  padding: 0 5rem 3.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #9dc20b;
+  position: relative;
+  left: 6.25rem; /*100px*/
+  top: 10.625rem /*170px*/
+}
+
+#sign-up-cta .content {
+  width: 25.5rem; /*408px*/
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+}
+
+#sign-up-cta h1 {
+  font-size: 3.125rem;
+}
+
+#sign-up-cta h2 {
+  font-size: 2.25rem;
+}
+
+#sign-up-cta span strong {
+  font-weight: bold;
+}
+
+#sign-up-cta .cursive {
+  font-family: "Damion", cursive;
+}
+
+#sign-up-cta .striking {
+  font-family: "Rubik", sans-serif;
+  padding-bottom: .75rem;
+}
+
+#sign-up-cta .button {
+  line-height: 1.2; /* to meet the button size specs*/
+  margin-top: 1.625rem;
+  padding: 1.25rem 7.25rem;
+
+}
+
+/******************************************/
+/******************************************/
+
+@media only screen and (max-width: 760px) {
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+  }
+
+  #sign-up-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
+
+  #sign-up-cta .content {
+    margin-top: 0;
+  }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 3.125rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2.25rem;
+  }
+} 
+
+/******************************************/
+/******************************************/
+@media only screen and (max-width: 600px) {
+  #sign-up-section {
+    height: 20rem;
+    background-size: cover;
+    background-position: right;
+  }
+
+  #sign-up-cta .content {
+    width: auto;
+    text-align: center;
+    /* padding: 0 5rem 2.5rem 0rem; */
+  }
+
+  #sign-up-cta h1 {
+    white-space: nowrap; /*prevents the heading from wrapping */
+    font-size: 2.25rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+/******************************************/
+/*******MOBILE SCREEN BANNER SECTION*******/
+/******************************************/
+
+@media only screen and (max-width: 320px) {
+#sign-up-cta {
+  padding: 0 0 2.5rem 0;
+    }
+  }
+
+/******************************************/
+/************ Features Section ************/
+/******************************************/
+
+#features-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  background-color: #f3f3f3;
+  width: auto;
+}
+
+.feature {
+  flex: 1;
+  padding: 2rem; /*32px*/
+  margin: 0px 1.25rem;
+  background-color: white;
+  width: 50%;
+  /* border: 5px solid black; */
+}
+
+.feature .image-container {
+  /* width of the featured image*/
+  width: 90%;
+  /* height of the featured image*/
+  height: 65%;
+  margin: 0 auto;
+  /* border: 5px dashed red; */
+}
+
+.image-container img {
+  display: inline-block;
+  width: 100%;
+  /* border: 5px solid black; */
+}
+
+.feature .center {
+  width: 100%;
+  /* border: 5px dotted fuchsia; */
+}
+
+.feature .content {
+  padding: 40px 0;
+  /* border: 5px dashed black; */
+}
+
+.feature h2 {
+  padding-bottom: .5rem;
+  font-size: 2.25rem; /*36px*/
+  font-weight: bold;
+  color: #4a4a4a;
+  line-height: 1.2;
+
+}
+
+.feature h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+/******************************************/
+/******************************************/
+
+@media only screen and (max-width: 890px) {
+  .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  .feature h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+}
+
+/******************************************/
+/******************************************/
+
+@media only screen and (min-width: 601px) and (max-width: 760px) {  
+  #features-section {
+    padding: 1rem 1rem;
+  }
+
+  .image-container img {
+    background-position: center;
+    aspect-ratio: 1/1;
+  }
+  
+  .feature.box1 {
+    /* width: auto; */
+    padding: 1.25rem 1rem 0 1rem;
+    margin: 0 1.1875rem 0 0;
+  }
+
+  .feature.box2 {
+    /* width: auto; */
+    padding: 1.25rem 1rem 0 1rem;
+    margin: 0 0 0 1.1875rem;
+
+  }
+}
+
+/* @media only screen and (max-width: 760px) {
+  #features-section {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .feature {
+    margin: 0;
+    padding: 1.25rem 1rem 0 1rem;
+  }
+} 
+
+*/
+
+/******************************************/
+/******************************************/
+
+@media only screen and (max-width: 600px) {
+  #features-section {
+    flex-flow: column;
+    align-content: center;
+    padding: 0;
+  }
+
+  .feature.box1 { /*changed the color of the top box for mobile*/
+    width: 100%;
+    background-color: lightgray; 
+    padding: 1rem 0rem 1.875rem;
+    margin: 0;
+  }
+
+  .feature.box2 { /*changed the color of the top box for mobile*/
+    width: 100%;
+    padding: 1rem 0rem 1.875rem;
+    margin: 0;
+  }
+
+  .feature .content {
+    padding-bottom: 0;
+  }
+}
+
+/**************************************/
+/********** Filters Section ***********/
+/**************************************/
+
+#filters-section {
+  padding: 4rem 0;
+  background-color: #4a4a4a;
+}
+
+#filters-section .content {
+  padding: 0 .625rem;
+  margin-bottom: 5rem;
+}
+
+#filters-section .content h2 {
+  font-size: 2.25rem; /*36px*/
+  font-weight: bold;
+  color: white;
+  opacity: 100%;
+}
+
+#filters-section .content h3 {
+  font-weight: 300;
+  font-size: 1rem; /*16px*/
+  line-height: 1.4;
+  font-weight: 300;
+  color: white;
+}
+
+#filters-section .images-container {
+  display: flex;
+  /* justify-content: center; */
+
+  max-width: 100%;
+  padding: 0 1%;
+}
+
+/******************************************/
+
+@media only screen and (max-width: 760px) {
+  #filters-section {
+    padding: 1.5rem 0 0 0;
+  }
+
+  #filters-section .content {
+    margin-bottom: 1rem;
+  }
+
+  #filters-section .content h2 {
+    padding-bottom: .625rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  #filters-section .content h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+
+  #filters-section .images-container {
+    padding: 0;
+  }
+
+  #filters-section .extra {
+    display: none;
+  }
+}
+
+/******************************************/
+
+
+/* Quotes Section */
+
+#quotes-section {
+  font-family: 'Palatino', serif;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-style: italic;
+  color: #4a4a4a;
+  background-color: #f3f3f3;
+  padding: 5rem 0;
+}
+
+#quotes-section content {
+  padding: 5rem 0;
+}
+
+#quotes-section quote {
+  /* padding-right: 1.875rem;  */
+  font-family: 'Palatino', serif;
+  font-size: 1.875rem; /*30px*/
+  line-height: 1.1;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+/* #quotes-section quote-citation {
+  height: 1.875rem; /*30px
+}  */
+
+span.quote {
+  padding: 0 1.875rem 0 0;
+}
+
+/******************************************/
+
+@media only screen and (max-width: 760px) {
+  #quotes-section content {
+    padding: 1.875rem .625rem;
+  }
+
+  #quotes-section quote {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  #quotes-section quote-citation {
+    display: block;
+    padding-top: 1rem;
+    margin: auto;
+  }
+}
+
+/******************************************/
+
+@media only screen and (max-width: 600px) {
+ 
+  #quotes-section {
+    padding: 3rem 0.5rem;
+  }
+
+  #quotes-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    } 
+
+    span.quote {
+      padding: 1rem 0;
+    }
+  }
+
+/******************************************/
+/* Footer */
+/******************************************/
+
+footer {
+  height: 3.875rem; /*62px*/
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem; /*24px 32px*/
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem; /*12px*/
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+/******************************************/
+@media only screen and (max-width: 760px) {
+  footer .content {
+    font-size: .625rem;
+  }
+}
+/******************************************/
