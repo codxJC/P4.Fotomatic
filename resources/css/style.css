@@ -29,13 +29,13 @@ html {
 }
 
 /*********************************/
-/*********************************/
 
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
   }
 } 
+
 /*********************************/
 /************* Header ************/
 /*********************************/
@@ -84,7 +84,6 @@ header .mobile {
   display: none;
 }
 
-/******************************************/
 /******************************************/
 @media only screen and (max-width: 600px) {
   
@@ -181,7 +180,6 @@ header .mobile {
 }
 
 /******************************************/
-/******************************************/
 
 @media only screen and (max-width: 760px) {
   #sign-up-section {
@@ -215,7 +213,6 @@ header .mobile {
   }
 } 
 
-/******************************************/
 /******************************************/
 @media only screen and (max-width: 600px) {
   #sign-up-section {
@@ -264,8 +261,8 @@ header .mobile {
 
 .feature {
   flex: 1;
-  padding: 2rem; /*32px*/
-  margin: 0px 1.25rem;
+  padding: 2rem 2rem 0; /*32px*/
+  margin: 0 1.25rem;
   background-color: white;
   width: 50%;
   /* border: 5px solid black; */
@@ -273,27 +270,23 @@ header .mobile {
 
 .feature .image-container {
   /* width of the featured image*/
-  width: 90%;
+  width: 100%;
   /* height of the featured image*/
   height: 65%;
-  margin: 0 auto;
-  /* border: 5px dashed red; */
+  margin: 0;
 }
 
 .image-container img {
   display: inline-block;
+  margin: 0;
   width: 100%;
-  /* border: 5px solid black; */
-}
-
-.feature .center {
-  width: 100%;
-  /* border: 5px dotted fuchsia; */
 }
 
 .feature .content {
+  display: block;
+  margin: 0;
+  width: 100%;
   padding: 40px 0;
-  /* border: 5px dashed black; */
 }
 
 .feature h2 {
@@ -313,7 +306,6 @@ header .mobile {
 }
 
 /******************************************/
-/******************************************/
 
 @media only screen and (max-width: 890px) {
   .feature h2 {
@@ -329,7 +321,6 @@ header .mobile {
 }
 
 /******************************************/
-/******************************************/
 
 @media only screen and (min-width: 601px) and (max-width: 760px) {  
   #features-section {
@@ -342,15 +333,13 @@ header .mobile {
   }
   
   .feature.box1 {
-    /* width: auto; */
     padding: 1.25rem 1rem 0 1rem;
-    margin: 0 1.1875rem 0 0;
+    margin: 0 0.5rem 0 0; 
   }
 
   .feature.box2 {
-    /* width: auto; */
     padding: 1.25rem 1rem 0 1rem;
-    margin: 0 0 0 1.1875rem;
+    margin: 0 0 0 0.5rem; 
 
   }
 }
@@ -368,8 +357,6 @@ header .mobile {
 } 
 
 */
-
-/******************************************/
 /******************************************/
 
 @media only screen and (max-width: 600px) {
@@ -466,9 +453,6 @@ header .mobile {
   }
 }
 
-/******************************************/
-
-
 /* Quotes Section */
 
 #quotes-section {
@@ -505,16 +489,23 @@ span.quote {
 /******************************************/
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
-    padding: 1.875rem .625rem;
+  #quotes-section {
+    padding: 3rem 0.5rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .content {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1.875rem .625rem;
+    text-align: left;
+  }
+
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -523,8 +514,7 @@ span.quote {
 
 /******************************************/
 
-@media only screen and (max-width: 600px) {
- 
+@media only screen and (max-width: 450px) {
   #quotes-section {
     padding: 3rem 0.5rem;
   }
@@ -541,19 +531,22 @@ span.quote {
   }
 
 /******************************************/
-/* Footer */
+/***************** Footer *****************/
 /******************************************/
 
 footer {
   height: 3.875rem; /*62px*/
   background-color: #9b9b9b;
   padding: 1.5rem 2rem; /*24px 32px*/
-}
-
-footer .content {
-  color: white;
   display: flex;
-  font-size: .75rem; /*12px*/
+  align-items: center;
+}
+  
+footer .content {
+  display: flex;
+  color: white;
+  font-size: .75rem; /*12px*/ 
+  width: 100%;
 }
 
 footer .copyright {
@@ -562,6 +555,11 @@ footer .copyright {
 
 /******************************************/
 @media only screen and (max-width: 760px) {
+  footer {
+    height: 3rem;
+    padding: 0rem 2rem;
+  }
+
   footer .content {
     font-size: .625rem;
   }
