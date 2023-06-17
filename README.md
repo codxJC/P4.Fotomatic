@@ -24,6 +24,9 @@ The methodology that I used:
 * All this with the help of Chrome Dev Tools.
 * Also, I used temporary borders, it helped a lot with the layered containers.
 
+The website looks ok for most screens, I think I have to check again the 320-450px screen, but for now I have to move on with my study
+and come back later to check the Codecademy solution for comparison.
+
 I am very proud that I came with my own solution and that I did not quit. It was SO difficult.
 
 CodxJC
