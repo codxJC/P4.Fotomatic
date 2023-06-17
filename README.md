@@ -7,14 +7,14 @@ Some specs and an image were provided to help with making adjustments to the bro
 
 I fixed the code and modified/added media queries to make the website responsive.
 
-I set the media query for mobile screens with a max screen of 450px,
+I have set the media query for mobile screens with a max screen of 450px,
 and the tablet size screen from 600px to 760px.
 
 Because some specs were missing I used the image as a guide to achieve a similar result.
 
 This is an EXTREMELY DIFFICULT PROJECT. It took 16-20 hours of work to decipher the code.
 The code intentionally included many containers the one inside the other or even one over the other,
-and in many cases incorrect syntax. 
+and in many cases incorrect syntax and containers with similar names. 
 
 The methodology that I used:
 * I commented out the existing media queries
