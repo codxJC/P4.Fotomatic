@@ -29,4 +29,6 @@ and come back later to review and clean my Code and check the Codecademy solutio
 
 I am very proud that I came with my own solution and that I did not quit. It was SO difficult.
 
+[Live Preview](https://raw.githack.com/codxJC/P4.Fotomatic/master/index.html)
+
 CodxJC
